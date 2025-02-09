@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Job Portal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+
+</head>
+<body>
+    <h1>Available Jobs</h1>
+    {% for job in jobs %}
+        <h2>{{ job.title }}</h2>
+        <p>{{ job.description }}</p>
+        <hr>
+    {% endfor %}
+    <a href="{{ url_for('register') }}">Register</a> |
+    <a href="{{ url_for('login') }}">Login</a> |
+    <a href="{{ url_for('logout') }}">Logout</a> |
+    <a href="{{ url_for('post_job') }}">Post a Job</a>
+</body>
+</html>

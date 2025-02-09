@@ -1,0 +1,95 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    margin: 5px;
+}
+
+a:hover {
+    color: #003366;
+}
+
+hr {
+    border: 1px solid #ddd;
+    width: 100%;
+    margin: 20px 0;
+}
+
+/* Container for main content */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"], input[type="password"], textarea, select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%;
+}
+
+button {
+    padding: 10px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #003366;
+}
+
+/* Layout for Available Jobs */
+.job-listing {
+    padding: 20px;
+}
+
+.job-listing h2 {
+    color: #444;
+}
+
+.job-listing p {
+    color: #666;
+}
+
+/* Responsive Layout */
+@media (max-width: 600px) {
+    .container, form {
+        width: 90%;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
